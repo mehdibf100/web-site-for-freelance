@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo2.png" type="image/x-icon">
+    <script>
+        
+        function checkBoxes() {
+            search=document.getElementById("sh").value;
+            var par=document.getElementById("p")
+            var search=document.getElementById("sh");
+            search.value === '' 
+            ? par.innerHTML="you must add something": window.location='page21.html'}
+            
+      function addDiv() {
+        
+        
+        let service=[{image:"video ed.jpg",description:"I will create your video with 4k quality",name:"Thamer Kthiri",profil:"man1.jfif",price:"10$"},
+        {image:"video ed.jpg",description:"I will secure your data ",name:"Ayoub Ben Geuchir",profil:"man2.jfif",price:"20$"},
+        {image:"data science.jfif",description:"I will create and develope your site web",name:"Mehdi ben Fekhta",profil:"man3.jfif",price:"15$"},
+        {image:"web develper.jfif",description:"i will edit your seo to fit to google search",name:"aziz ",profil:"man4.jfif",price:"10$"},
+        {image:"seo.jpg",description:"i will upgrade your social media account ",name:"Y Woman",profil:"woman5.jfif",price:"160$"},
+        {image:"social media.jpg",description:"i will create your brand and identity",name:"X Woman",profil:"woman6.jfif",price:"100$"},]
+      
+        var div=document.createElement("div");
+        // create a new div element
+        
+        
+        for(let i=0;i<3;i++){
+        var newDiv = document.createElement("div");
+        
+      
+        newDiv.style.marginTop="9%"
+        newDiv.style.marginRight="1%"
+        newDiv.style.marginLeft="1%"
+        /*newDiv.style.width="30%"
+        newDiv.style.float="right"*/
+        newDiv.style.border="grey 1px solid";
+        newDiv.style.borderRadius="10px"
+       
+
+        
+
+
+        
+        // create a new image element
+        var newImg = document.createElement("img");
+        newImg.src=service[i].image;
+        var profil=document.createElement("img");
+        profil.src=service[i].profil;
+        //
+        
+        newImg.style.width = "100%";
+        profil.style.width = "70px";
+        profil.style.height= "70px";
+        profil.style.border = "solid white 3px";
+        profil.style.borderRadius="50%"
+        profil.style.marginTop="-15%"
+        
+
+        // create a new paragraph element
+        var newP = document.createElement("h4");
+        var newna = document.createElement("h3");
+        newna.style.marginLeft="5px"
+        newP.style.marginLeft="5px"
+        newP.innerHTML = service[i].description;
+        newna.innerHTML=service[i].name;
+        var nprice=document.createElement("h4");
+        nprice.innerHTML=service[i].price;
+        nprice.style.float="right";
+        nprice.style.marginRight="10px";
+        nprice.style.color="green";
+
+
+        // add the image and paragraph elements as children of the new div element
+        newDiv.appendChild(newImg);
+        newDiv.appendChild(profil);
+        newDiv.appendChild(newna);
+        newDiv.appendChild(newP);
+        newDiv.appendChild(nprice);
+        
+        
+
+        // add the new div element as a child of the body element
+        
+        div.appendChild(newDiv);
+        document.getElementById("pff").appendChild(div)
+        
+       
+      }
+      div.style.display="flex"
+      var div1=document.createElement("div")
+      for(let i=3;i<6;i++){
+        var newDiv = document.createElement("div");
+        
+      
+        newDiv.style.marginTop="5%"
+        newDiv.style.marginRight="1%"
+        newDiv.style.marginLeft="1%"
+        newDiv.style.width="30%"
+    
+        newDiv.style.border="grey 1px solid";
+        newDiv.style.borderRadius="10px"
+       
+
+        
+
+
+        
+        // create a new image element
+        var newImg = document.createElement("img");
+        newImg.src=service[i].image;
+        var profil=document.createElement("img");
+        profil.src=service[i].profil;
+        //
+        
+        newImg.style.width = "100%";
+        profil.style.width = "70px";
+        profil.style.height= "70px";
+        profil.style.border = "solid white 3px";
+        profil.style.borderRadius="50%"
+        profil.style.marginTop="-15%"
+        
+
+        // create a new paragraph element
+        var newP = document.createElement("h4");
+        var newna = document.createElement("h3");
+        newna.style.marginLeft="5px"
+        newP.style.marginLeft="5px"
+        newP.innerHTML = service[i].description;
+        newna.innerHTML=service[i].name;
+        var nprice=document.createElement("h4");
+        nprice.innerHTML=service[i].price;
+        nprice.style.float="right";
+        nprice.style.marginRight="10px";
+        nprice.style.color="green";
+
+
+        // add the image and paragraph elements as children of the new div element
+        newDiv.appendChild(newImg);
+        newDiv.appendChild(profil);
+        newDiv.appendChild(newna);
+        newDiv.appendChild(newP);
+        newDiv.appendChild(nprice);
+        
+        
+
+        // add the new div element as a child of the body element
+        
+        div1.appendChild(newDiv);
+        document.getElementById("pff").appendChild(div1)
+        
+       
+      }
+      div1.style.display="flex"
+
+   
+}
+            
+
+
+    </script>
+    
+    <title>Prolancer</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body onload="addDiv()">
+    
+   
+    <div class="row">  <a href="project.html" > <img src="logo1 (1).jpg" height="8%" width="8%" id="lo" ></a> 
+     
+   
+<a id="aa" href="page3.html" style="color: rgb(0, 180, 200);">Log In</a> 
+ <button id="bt4" onclick="window.location='page21.html'">Sin Up</button>
+    </div>
+    <hr>
+   
+    <div id="d1">
+    <h1 style="color: rgb(0, 180, 200); font-size: 40px;">Unlock Your Full Potential: </br>  the Ultimate Freelance</br> Community Today!</h1>
+    <h4>Discover Unlimited Opportunities and Unleash Your Creativity: </br>The Ultimate Freelance Platform to Grow Your Business</br> and Connect with Top Clients!</h4>
+
+
+    <input type="text" id="sh" placeholder="Search">  
+    <button onclick="checkBoxes()" id="bt1">Get started</button>
+<br> <p id="p" style="color:red;margin-top: -3px;margin-left: 10px;"></p></div>
+     <img src="image1.jpg" width="50%" height="50%" id="im1">
+     <br>
+     <hr>
+     <div class="offer">
+       
+        <span style="width:30%">
+            <img src="support chat.png" height="150px" width="150px">
+            <p>Our chat support is available 24/7, so you can reach out to us 
+                at any time of the day or night</p>
+        </span>
+        <span style="width:30%">
+            <img src="datas.png" height="150px" width="150px">
+            <p>By signing up with us, you can trust that your data is in safe hands and enjoy peace 
+                of mind knowing that your privacy and security are our top priorities.</p>
+        </span>
+        <span style="width:30%">
+            <img src="grow fast.png" height="150px" width="150px">
+            <p>Grow your account with hottest freelancer website with high converted client </p>
+        </span>
+
+     </div>
+     <br>
+     <center><h1>The most service</h1></center>
+     <div id="pff"></div>
+
+
+
+     
+   
+</body>
+</html>

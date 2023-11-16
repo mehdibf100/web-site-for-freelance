@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function verif(){
+            
+            var age=document.getElementById('age').value;
+            var formulaire=document.getElementById("monformulaire");
+            if(age>20){
+                const p=document.createElement("label");
+                p.textContent="telephone";
+                const p1=document.createElement("label");
+                p1.textContent="mail";
+const inp =document.createElement('input');
+const b=document.createElement("br")
+
+inp.setAttribute("type","number");
+inp.setAttribute("name","yassine");
+const inp1 =document.createElement('input');
+const gn=document.createElement("select");
+
+var option1=document.createElement("option");
+option1.textContent="M"
+gn.appendChild(option1)
+var option2=document.createElement("option");
+option2.textContent="S"
+gn.appendChild(option2);
+
+
+const ec=document.createElement("select");
+K=document.createElement("label");
+K.textContent="Genre"
+m=document.createElement("label");
+m.textContent="etat civile"
+
+
+
+
+var option1=document.createElement("option");
+option1.textContent="C"
+ec.appendChild(option1)
+var option2=document.createElement("option");
+option2.textContent="M"
+ec.appendChild(option2);
+var option3=document.createElement("option");
+option3.textContent="D"
+ec.appendChild(option3);
+
+
+
+
+inp1.setAttribute("type","email");
+inp1.setAttribute("name","mail");
+formulaire.appendChild(p);
+formulaire.appendChild(inp);
+formulaire.appendChild(b);
+formulaire.appendChild(p1);
+formulaire.appendChild(inp1);
+formulaire.appendChild(b);
+formulaire.appendChild(m);
+
+formulaire.appendChild(gn);
+formulaire.appendChild(b);
+
+formulaire.appendChild(K);
+formulaire.appendChild(ec)
+
+
+
+            }
+            else{
+                formulaire.removeChild();
+            }
+        }
+       
+    </script>
+</head>
+<body>
+    <h1>Formulaire Inscription</h1>
+    <form id="monformulaire">
+    <label>Nom</label><input type="text" id="nom"><br>
+    <label>prenom</label><input type="text" id="prenom"><br>
+    <label>age</label><input type="number" id="age" onkeyup="verif()"><br>
+
+<div id="q"></div>
+</form>
+    
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo2.png" type="image/x-icon">
+    <title>Document</title>
+    <link rel="stylesheet" href="project.css">
+
+    <style>
+        #agent{
+            display: flex;
+            padding-top: 30px;
+            
+           
+        }
+        .ss{
+            width: 25%;
+            margin-left: 10px;
+            display: block;
+            text-align: center;
+            align-items: center;
+        }
+        .btn2{
+            width: 200px;
+            height:30px ;
+            border: 1px solid blue;
+            font-size: 15px;
+            padding: 5px;
+        }
+        #vas{
+            display: flex;
+            margin-top: 10%;
+           
+            
+        }
+       
+
+    </style>
+    <script>
+        function addDiv() {
+        
+        
+        let service=[{image:"video ed.jpg",description:"I will create your video with 4k quality",name:"Thamer Kthiri",profil:"man1.jfif",price:"10$"},
+        {image:"video ed.jpg",description:"I will secure your data ",name:"Ayoub Ben Geuchir",profil:"man2.jfif",price:"20$"},
+        {image:"data science.jfif",description:"I will create and develope your site web",name:"Mehdi ben Fekhta",profil:"man3.jfif",price:"15$"},
+        {image:"devlop.jpg",description:"i will edit your seo to fit to google search",name:"aziz ",profil:"man4.jfif",price:"10$"},
+        {image:"seo.jpg",description:"i will upgrade your social media account ",name:"Y Woman",profil:"woman5.jfif",price:"160$"},
+        {image:"social media.jpg",description:"i will create your brand and identity",name:"X Woman",profil:"woman6.jfif",price:"100$"},]
+      
+        var div=document.createElement("div");
+        // create a new div element
+        
+        
+        for(let i=0;i<3;i++){
+        var newDiv = document.createElement("div");
+        
+      
+        newDiv.style.marginTop="9%"
+        newDiv.style.marginRight="1%"
+        newDiv.style.marginLeft="5%"
+        newDiv.style.width="25%"
+        newDiv.style.float="right"
+        newDiv.style.border="grey 1px solid";
+        newDiv.style.borderRadius="10px"
+       
+
+        
+
+
+        
+        // create a new image element
+        var newImg = document.createElement("img");
+        newImg.src=service[i].image;
+        var profil=document.createElement("img");
+        profil.src=service[i].profil;
+        //
+        
+        newImg.style.width = "100%";
+        profil.style.width = "70px";
+        profil.style.height= "70px";
+        profil.style.border = "solid white 3px";
+        profil.style.borderRadius="50%"
+        profil.style.marginTop="-15%"
+        
+
+        // create a new paragraph element
+        var newP = document.createElement("h4");
+        var newna = document.createElement("h3");
+        newna.style.marginLeft="5px"
+        newP.style.marginLeft="5px"
+        newP.innerHTML = service[i].description;
+        newna.innerHTML=service[i].name;
+        var nprice=document.createElement("h4");
+        nprice.innerHTML=service[i].price;
+        nprice.style.float="right";
+        nprice.style.marginRight="10px";
+        nprice.style.color="green";
+        btn=document.createElement("button");
+        btn.textContent="Contact";
+        btn.style.cssText="border:none;float:left;margin-left:5%; width:35%;background-color:  padding:5px;background-color:rgb(0, 180, 200);font-size:15px;color:white"
+
+
+        // add the image and paragraph elements as children of the new div element
+       
+        newDiv.appendChild(newImg);
+        newDiv.appendChild(profil);
+        newDiv.appendChild(newna);
+        newDiv.appendChild(newP);
+        newDiv.appendChild(nprice);
+        newDiv.appendChild(btn);
+        
+        
+
+        // add the new div element as a child of the body element
+        
+        div.appendChild(newDiv);
+        document.getElementById("browser").appendChild(div)
+        
+       
+      }
+      div.style.display="flex"
+      var div1=document.createElement("div")
+      for(let i=3;i<6;i++){
+        var newDiv = document.createElement("div");
+        
+      
+        newDiv.style.marginTop="5%"
+        newDiv.style.marginRight="1%"
+        newDiv.style.marginLeft="5%"
+        newDiv.style.width="25%"
+    
+        newDiv.style.border="grey 1px solid";
+        newDiv.style.borderRadius="10px"
+       
+
+        
+
+
+        
+        // create a new image element
+        var newImg = document.createElement("img");
+        newImg.src=service[i].image;
+        var profil=document.createElement("img");
+        profil.src=service[i].profil;
+        //
+        
+        newImg.style.width = "100%";
+        profil.style.width = "70px";
+        profil.style.height= "70px";
+        profil.style.border = "solid white 3px";
+        profil.style.borderRadius="50%"
+        profil.style.marginTop="-15%"
+        
+
+        // create a new paragraph element
+        var newP = document.createElement("h4");
+        var newna = document.createElement("h3");
+        newna.style.marginLeft="5px"
+        newP.style.marginLeft="5px"
+        newP.innerHTML = service[i].description;
+        newna.innerHTML=service[i].name;
+        var nprice=document.createElement("h4");
+        nprice.innerHTML=service[i].price;
+        nprice.style.float="right";
+        nprice.style.marginRight="10px";
+        nprice.style.color="green";
+        btn=document.createElement("button");
+        btn.textContent="Contact";
+        btn.style.cssText="border:none;float:left;margin-left:5%; width:35%;background-color:  padding:5px;background-color:rgb(0, 180, 200);font-size:15px;color:white"
+
+
+
+        // add the image and paragraph elements as children of the new div element
+        newDiv.appendChild(newImg);
+        newDiv.appendChild(profil);
+        newDiv.appendChild(newna);
+        newDiv.appendChild(newP);
+        newDiv.appendChild(btn)
+        newDiv.appendChild(nprice);
+        
+        
+        
+
+        // add the new div element as a child of the body element
+        
+        div1.appendChild(newDiv);
+        
+
+      } div1.style.display="flex"
+       document.getElementById("browser").appendChild(div1);
+       
+      }
+    </script>
+</head>
+<body onload="addDiv()">
+    <nav class="heade">
+        
+        <div class="heade">
+
+        <a href="project.html"> <img src="logo1 (1).jpg" height="30%" width="30%"></a>
+    </div>
+ 
+        <div class="heade">
+            <ul>
+                <li> <a href="">Job</a></li>
+                <li> <a href="">Talent</a></li>
+                
+            </ul>
+        </div>
+        <hr>
+        <div id="vas">
+            <h1 style="margin-right: 58%;margin-left: 7%;">Browser Job</h1>
+            <input type="text" placeholder="find talent" style="border-radius: 5px;height: 50px;width: 200px;">
+
+        </div>
+        <div id="browser">
+
+        </div>
+        <center><h1>TOP Freelancer</h1>
+        <div id="agent">
+            
+            <div class="ss">
+                <img src="man1.jpg" alt="" width="150px" height="150px"  style="border-radius: 50%;">
+                <p>Thamer Kthiri</p>
+                <img src="5 etoile.png"  width="35%" style="margin-left: 31.5px;">
+                <button class="btn2">Contact</button>
+            </div>
+            <div class="ss">
+                <img src="mehdi.jpg" alt="" width="150px" height="150px"   style="border-radius: 60%;">
+                <p>Mehdi ben Fakhta</p>
+                <img src="5 etoile.png"  width="35%" style="margin-left: 31.5px;">
+                <button class="btn2">Contact</button>
+            </div>
+            <div class="ss">
+                <img src="ayoub.img.jpg" width="150px" height="150px"  style="border-radius: 50%;">
+                <p>Ayoub Ben Geuchir</p>
+                <img src="5 etoile.png"  width="35%" style="margin-left: 31.5px;">
+                <button class="btn2">Contact</button>
+            </div>
+            <div class="ss">
+                <img src="woman2.jpg" width="150px" height="150px"  style="border-radius: 50%;">
+                <p>Yassine sare9</p>
+                <img src="5 etoile.png"  width="35%" style="margin-left: 31.5px;">
+                <button class="btn2">Contact</button>
+            </div>
+        </div>
+    
+</body>
+</html>

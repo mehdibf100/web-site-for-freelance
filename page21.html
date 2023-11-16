@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo2.png" type="image/x-icon">
+    <title>Prolancer</title>
+    <script src="main2.js"></script>
+    <link rel="stylesheet" href="project.css">
+
+</head>
+<body>
+    
+    <div>
+
+   <a href="project.html"> <img src="logo1 (1).jpg" height="8%" width="8%"></a>
+</div>
+<div id="sin">
+    <div  id="p1">    <h1 style="text-align: center;" >Join as a client or freelancer</h1>
+        <div id="p2">
+    <img src="image3.jpg" width="60%" height="60%">  <input type="radio" name="r1" onfocus="client()"> 
+<h3>I’m a client, hiring for a project </h3>
+
+</div>
+<div id="p3"> 
+  <img src="image2.jpg" width="60%" height="60%" > <input type="radio" onfocus="free()" name="r1"> 
+ <h3>I’m a freelancer, looking for work</h3>
+ 
+ </div>
+
+
+    </div>
+    <div id="content1" style="visibility: hidden;margin-left: 30%;margin-right: 30%;">
+        <form name="f">
+        <h1 style="text-align: center;" >sign up as freelancer</h1>
+        <input type="text" name="name" required onkeyup="check()" placeholder="Name" id="n1"></br>
+        <p style="color: red; font-size: 14px;" id="pp1"></p><br>
+         <input type="text" name="lastname" required onkeyup="check()" placeholder="last Name" id="n2">
+         <br><p style="color: red; font-size: 14px;" id="pp2"></p><br>
+         <input type="email" name="mail" onkeyup="veriftemail()" placeholder="email" id="n3">
+         <br><p style="color: red;" id="pp3"></p>
+         <br>
+         <input type="password" name="pass" onkeyup="verifmotpasse()" placeholder="Password" id="n4">
+         <br><p  id="pp4"></p>
+         <br>
+         <input type="password" name="pass2" onkeyup="verifmotpasse()" placeholder=" confirm password " id="n5">
+         <br><p style="color: red;" id="pp5"></p>
+        </br>
+         <input type="checkbox" name="agree"> Yes, I understand and agree to the Upwork Terms of Service , including the User Agreement and Privacy Policy .
+         <br>
+       
+         <input type="button" value="Create My Account" onclick="press()" id="n6">
+         <br>
+         <P>Already have an account?<a href="page3.html" style="color: rgb(0, 180, 200);">Log In</a> </P>
+        
+
+        </form>
+
+    </div>
+    <div id="content2" style="visibility: hidden;">
+        <h1 style="text-align: center;">sign up as client</h1>
+        <input type="text" name="name" required onkeyup="check()" placeholder="Name" id="n1"><br>
+        <p style="color: red;" id="pp1"></p><br>
+         <input type="text" name="lastname" required onkeyup="check()" placeholder="last Name" id="n2">
+         <br><p style="color: red;" id="pp2"></p><br>
+         <input type="email" name="mail" onkeyup="veriftemail()" placeholder="email" id="n3">
+         <br><p style="color: red;" id="pp3"></p>
+         <br>
+         <input type="password" name="pass" onkeyup="verifmotpasse()" placeholder="Password" id="n4">
+         <br><p  id="pp4"></p>
+         <br>
+         <input type="password" name="pass2" onkeyup="verifmotpasse()" placeholder=" confirm password " id="n5">
+         <br><p style="color: red;" id="pp5"></p>
+        </br>
+         <input type="checkbox" name="agree"> Yes, I understand and agree to the Upwork Terms of Service , including the User Agreement and Privacy Policy .
+         <br>
+         <input type="button" value="Create My Account" onclick="press()" id="n6">
+         <br>
+         <P>Already have an account?<a href="page3.html" style="color: rgb(0, 180, 200);">Log In</a> </P>
+
+    </div></div>
+    <div id="p42" style="visibility: hidden;">
+    <div style="width: 500px;height: 450px; border: 2px solid grey; border-radius: 2%;margin-left: 500px;margin-top: 100px; ">                                                                         
+        <h1 style="text-align: center; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 25px;">Welcome</h1>
+        <input type="text"  placeholder="Username or Email" name="t1" id="tm"><p id="ma"></p></br>
+        <input type="text"style="margin-top: 20px;" placeholder="Password" name="t11" id="ta" ></br><p id="mx"></p></br>
+        <input type="checkbox" name="agree" style="margin-left: 90px; margin-top: 20px;">Keep me logged in
+        <a href="#" style="color: rgb(0, 180, 200); margin-left: 50px; font-size: 15px;">Forgot your password?</a> 
+        <button onclick="motp()" id="bt3"><p style="color: aliceblue;">log in</p></button>
+      
+    </div></div>
+    <script>
+       
+    </script>
+</body>
+</html>

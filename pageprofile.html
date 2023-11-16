@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo2.png" type="image/x-icon">
+    <title>Prolancer</title>
+    <script src="main2.js"></script>
+    <link rel="stylesheet" href="project.css">
+
+</head>
+<body>
+    
+    <div>
+
+   <a href="project.html"> <img src="logo1 (1).jpg" height="8%" width="8%"></a>
+</div>
+<hr>
+<div id="content21">
+<h1 style="font-style:italic ; font-size: 30px;" ><b>A few quick questions: first, have you <br>freelanced before?</b></h1>
+    <p style="margin-top: -5px;font-weight: bold;" >This lets us know how much help to give you along the way.<br> We won’t share your answer with anyone else, including potential clients.</p>
+<div class="bg" id="bg" onclick="beg()">
+    <img src="begginer.png" width="35%" height="50%" alt="">
+    <h1> I am brand new to this </h1>
+</div>
+<div class="bg" id="bg2" onclick="exp()">  <img src="experince.png" width="35%" height="50%" alt=""><h1>I have some experience</h1></div>
+<div class="bg" id="bg3" onclick="exr()"><img src="expert.png" width="35%" height="50%" alt=""><h1>I am an expert</h1></div>
+
+
+<div style="width: 100%;height: 10px;border-top: 4px solid rgb(206, 206, 206);margin-top: 400px;position: relative;"></div>
+    <div id="hr1" style="width: 25%; height: 10px;border-top: 4px solid rgb(8, 189, 23);margin-top: -14px;position: relative;"></div>
+        <div>
+            <button onclick="back()" sty id="ba">Back</button>
+            <button onclick="next()" id="bb" style="visibility: hidden;" > Next</button></div> </div>
+
+<div id="content22" style="visibility: hidden;"><h1 >Got it. Now, add a title to tell the world what you<br> do.</h1>
+<div  style="display: block;"><p>It’s the very first thing clients see, so make it count. Stand out by describing your expertise in your own words<br>Your professional role</p></div>
+<br><input type="text" id="recherche" placeholder="type your skill" onkeyup="type()">
+
+<img class="lala" src="skils-removebg-preview.png"><div style="margin-top: -100px;"></div><div style="width: 100%;height: 10px;border-top: 4px solid rgb(206, 206, 206);margin-top: 400px;position: relative;">
+    <div id="hr1" style="width:50%; height: 10px;border-top: 4px solid rgb(8, 189, 23);margin-top: -3.5px;position: relative;"></div>
+        
+<div>
+    <button onclick="back()" sty id="ba">Back</button>
+    <button onclick="next()" id="bb" > Next</button></div>
+</div></div></div>
+<div id="content23" style="visibility: hidden;">
+    <div class="part">
+    <h1>Great! Now write a bio to tell the world about yourself.</h1>
+    <p>Help people get to know you at a glance. What work are you best at? Tell them clearly,<br> using paragraphs or bullet points. You can always edit later - just make sure you proofread now!
+
+    </p></div>
+    <div id="mh" style="float: right;border-radius: 5%;border: 1px solid black;width: 400px;height: 400px;"><img id="output"/><p id="pd5"><b></b></p><p style="margin-top: 170px;margin-left: 20px;  font-size: 14px;font-weight: bold;" id="pp8"></p><br>
+    <p style="font-size: 17px;font-weight: bold;" id="pp9"></p> 
+    </div>
+    
+    <p>Your overview</p>
+    
+    <div style="margin-top: -200px;"><input type="text" placeholder="your name" id="nm" style="border-radius: 7%;margin-top: 200px;margin-left:20px;width: 150px;height: 30px;" onkeyup="append()"><br><input type="number" id="mony" style="border-radius: 7%;margin-top: 20px;margin-left:20px;width: 150px;height: 30px;" onkeyup="append()"><p style="margin-left: 180px;margin-top: -25px;font-weight: bold;" >$/hr</p>
+   <br><textarea style="border-radius: 2%;margin-left: 20px;" id="textarea1"  cols="50" rows="10"  onkeyup="append()"></textarea><br> <div id="" class="part">
+        <input type="file"  accept="image/*" onchange="loadFile(event)">
+</div><div style="width: 100%;height: 10px;border-top: 4px solid rgb(206, 206, 206);margin-top: 150px;position: relative;">
+    <div id="hr1" style="width: 75%; height: 10px;border-top: 4px solid rgb(8, 189, 23);margin-top: -4px;position: relative;"></div>
+        
+<div>
+    <button onclick="back()" sty id="ba">Back</button>
+    <button onclick="next()" id="bb" > Next</button></div>
+</div></div></div>
+<div id="content24" style="visibility: hidden;">
+    <h1 class="heading" style="font-size: 30px;">Looking good.<br> Next, tell us which languages <br> you speak.</h1>
+    <p >Proclancer is global, so clients are often interested to know what languages you speak. English is a must, but do you speak any other languages?</p>
+    <button onclick="addlanguage()"><img src="+.png" height="5%" width="5%"> Add language</button>
+    <table id="tab" >
+        
+        <tr style="border-bottom: 1px brown solid;">
+            <td style="width: 40%;">Language</td>
+            <td>Proficiency</td>
+            <td>
+                tash field
+            </td>
+        </tr>
+        <tr>
+            <td><select id="sle">
+                <option value="">English</option>
+                <option value="">French</option>
+                <option value="">Arabic</option>
+
+            </select></td>
+            <td><select id="sle2">
+                <option value="">Basic</option>
+                <option value="">Conversatinal</option>
+                <option value="">Fluent</option>
+                <option value="">Native</option>
+            </select></td>
+            <td id="td2"><button  onclick="trash()" style="border-color: transparent;background-color: transparent;"><img src="trash.png" alt="" width="10%" height="10%"></button></td>
+        </tr>
+    </table>
+<div style="margin-top: -200px;">
+<div style="width: 100%;height: 10px;border-top: 4px solid rgb(206, 206, 206);margin-top: 400px;position: relative;"></div>
+    <div id="hr1" style="width:100%;height: 10px;border-top: 4px solid rgb(8, 189, 23);margin-top: -13px;position: relative;">
+    </div>
+<div>
+    <button onclick="back()" sty id="ba">Back</button>
+    <button onclick="next()" id="bb" > Next</button></div>
+
+<br></div></div>
+
+
+<script>
+ 
+  var loadFile = function(event) {
+   
+
+    
+    var output = document.getElementById('output');
+    output.src = URL.createObjectURL(event.target.files[0]);
+    
+  
+   // output.onload = function() {
+       
+      //  document.body.appendChild(URL.revokeObjectURL(output.src));
+      
+      
+      
+      
+
+    }
+  //};
+
+</script>
+
+ 
+
+</body>
+</html>
+    
+</body>
+</html>

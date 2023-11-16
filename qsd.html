@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Adding a div section using JavaScript</title>
+  </head>
+  <body>
+    <h1>My HTML Page</h1>
+    <button onclick="addDiv()">Add Div</button>
+    <script>
+      function addDiv() {
+        // create a new div element
+        var newDiv = document.createElement("div");
+
+        // set some properties for the new div element
+        newDiv.id = "myDiv";
+        newDiv.style.backgroundColor = "yellow";
+        newDiv.innerHTML = "This is a new div section!";
+
+        // add the new div element as a child of the body element
+        document.body.appendChild(newDiv);
+      }
+    </script>
+  </body>
+</html>

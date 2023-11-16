@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project.css">
+    <script>
+function msg(){
+document.getElementById("msg1").innerHTML=document.getElementById("msg2").innerHTML;
+
+
+}
+    </script>
+    <title>Contact us</title>
+</head>
+<body>
+    <div>
+
+        <a href="project.html"> <img src="logo1 (1).jpg" height="8%" width="8%"></a>
+        <img src="user.png" alt=""style="float:right;margin-left:450px" width="2%" height="2%">
+     </div><hr>
+    <div id="msg1" style="display: flex;">
+    <img src="check.png" width="20%" height="20%" style="padding-left:100px ;padding-top:100px ;">
+    <div  style="padding-left:400px ;">
+<h1>Get touch</h1>
+<input type="text" id="t44" placeholder="Name" class="t66"><br>
+<input type="email" id="t55" placeholder="Email" class="t66"><br>
+<input type="email" id="t66" placeholder="Email to" class="t66"><br><br>
+Message:<br>
+<textarea style="border-radius: 7px;margin-top: 20px;" cols="50px" rows="10px"></textarea><br><br>
+<input type="button" onclick="msg()" id="bt77" value="Send email" class="t77">
+
+</div>
+</div>
+<div id="msg2" style="visibility: hidden;">
+    
+  <h1 style="margin-left: 400px;">votre Message est envoyer avec succes</h1><br>
+<img style="margin-top: 100px;margin-left: -450px;" src="em.png" width="20%">
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="shortcut icon" href="logo2.png" type="image/x-icon">
+    <script src="main2.js"></script>
+    <script src="jquery.min.js"></script>
+</head>
+<body onload="cart()">
+    <nav class="heade">
+        
+        <div class="heade">
+
+        <a href="project.html"> <img src="logo1 (1).jpg" height="30%" width="30%"></a>
+    </div>
+ 
+        <div class="heade">
+            <ul>
+                <li> <a href="">Job</a></li>
+                <li> <a href="">Talent</a></li>
+                
+            </ul>
+        </div>
+        <img src="user.png" alt=""style="float:right;margin-left:450px" width="3%" height="3%">
+        
+    </nav>  
+     <hr>
+     <div id="content11">
+        <div style="border-right: 1px solid rgb(184, 178, 178);height: 350px;margin-left: 100px;">
+            <h1>Write a title for your job post</h1>
+            <p>This helps your job post stand out to the right candidates. <br>
+                It’s the first thing they’ll see, so make it count!</p>
+
+
+        </div>
+
+        <div style="margin-left: 100px;">
+            <p><b>Write a title for your job post</b></p>
+            <input type="text" id="filed" >
+            <p><b> Example titles</b></p>
+            <ul><li>Build responsive WordPress site with booking/payment functionality</li>
+            <li>AR experience needed for virtual product demos (ARCore)</li>
+        <li>Developer needed to update Android app UI for new OS/device specs</li></ul>
+
+        </div>
+     </div>
+     <div style="width: 100%;height: 10px;border-top: 4px solid rgb(206, 206, 206);margin-top: 20px;position: relative;"></div>
+     <div id="hr1" style="width: 25%; height: 10px;border-top: 4px solid rgb(8, 189, 23);margin-top: -14px;position: relative;"></div>
+     <button onclick="next1()" id="bb" style="margin-left: 1200px;" > Next:Skills</button></div>
+     <div id="content12" style="visibility: hidden;">
+        <div style="border-right: 1px solid rgb(184, 178, 178);height: 350px;margin-left: 100px;">
+            <h1 style="font-size: 27px;margin-right: 15px;">Next, estimate the scope of your work.</h1>
+            <p>Consider the size of your project and the time it will take.</p>
+
+
+        </div>
+        <div style="margin-left: 100px;">
+            <div id="check">
+                <form name="f">
+                <input type="radio" id="rad1" onchange="valid()"><p id="check1"><b>small</b></p>
+                
+                
+                <p id="p11">Quick and straightforward tasks (ex. update text and images on a webpage)</p><br>
+                <input type="radio" id="rad2" onchange="valid()">
+                <p id="check2"><b>Medium</b></p>
+            
+                <p id="p12">Well-defined projects (ex. a landing page)</p><br>
+                <input type="radio" id="rad3" onchange="valid()">
+                <p id="check3"><b>Large</b></p>
+                
+                <p id="p13">Longer term or complex initiatives (ex. design and build a full website)</p><br>
+            </form>
+            </div>
+            <div id="time">
+            <form name="d">
+                <input type="radio" name="rad11" onchange="valid1()">
+                <p id="check11"><b>More than 6 months</b></p>
+          
+            
+                <input type="radio" id="rad22" onchange="valid1()">
+                <p id="check22"><b>3 to 6 months</b></p>
+             
+               
+                <input type="radio" id="rad33" onchange="valid1()">
+                <p id="check33"><b>1 to 3 months</b></p>
+                
+            
+
+            </form>
+        </div> 
+            <div>
+                <div class="expert">
+                <form name="c">
+                    
+                    <p><b>What level of experience will it need?</b></p>
+                    <p>This won't restrict any proposals, but helps match expertise to your budget.</p>
+                    <input type="radio" name="rad10" onchange="valid2()">
+                    <p id="check10"><b>Entry</b></p>
+                    <p id="t0">Looking for someone relatively new to this field</p>
+                
+                
+                    <input type="radio" id="rad12" onchange="valid2()">
+                    <p id="check12"><b>Intermediate</b></p>
+                    <p id="t1">Looking for substantial experience in this field</p>
+                   
+                   
+                    <input type="radio" id="rad13" onchange="valid2()">
+                    <p id="check13"><b> Expert</b></p>
+                    <p id="t2">Looking for comprehensive and deep expertise in this field</p>
+                    </div>
+                  
+                
+    
+                </form>
+                </div>
+
+            </div>
+            
+
+        </div>
+
+
+        
+        
+
+     </div>
+     <div style="width: 100%; height: 500px;"  id="div88">
+       <p id="ded" ><b>Checkout</b></p> 
+     </div>
+</body>
+</html>
